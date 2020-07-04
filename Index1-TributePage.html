@@ -1,0 +1,199 @@
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+Responsive Web Design Projects - Build a Tribute Page
+Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNqgVx.
+Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
+You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
+
+User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.
+User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
+User Story #3: I should see a div element with a corresponding id="img-div".
+User Story #4: Within the img-div element, I should see an img element with a corresponding id="image".
+User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div.
+User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.
+User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank").
+User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+User Story #9: The img element should be centered within its parent element.
+
+You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js.
+Once you're done, submit the URL to your working project with all its tests passing.
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/css1-TributePage.css">
+</head>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<header>
+    <h1 id="title">Climate Change and Global Warming</h1>
+    <title>Climate Change and Global Warming</title>
+</header>
+
+<body id="main">
+    <div id="img-div">
+        <img id="image" src=" assets/images/1-FCC-TributePage-GlobalWarming-Large.jpg" alt="">
+        <figcaption id="img-caption">2019 was the hottest year on record.</figcaption>
+
+        <p id="tribute-info"><br>Climate change is the long-term alteration in Earth’s climate and weather patterns. It
+            took nearly a century of research
+            and data to convince the vast majority of the scientific community that human activity could alter the
+            climate of our
+            entire planet. In the 1800s, experiments suggesting that human-produced carbon dioxide (CO2) and other gases
+            could
+            collect in the atmosphere and insulate Earth were met with more curiosity than concern. By the late 1950s,
+            CO2 readings
+            would offer some of the first data to corroborate the global warming theory. Eventually an abundance of
+            data, along with
+            climate modeling would show not only that global warming was real, but that it also presented a host of dire
+            consequences.<br><br></p>
+
+        <div id="main-ul">
+            <ul>
+                <li>
+                    <p>READ MORE: <a id="tribute-link"
+                            href="https://www.history.com/news/keeling-curve-global-warming-climate-change"
+                            target="_blank">When Global Warming Was Revealed by the Keeling Curve</a></p>
+                </li>
+                <li>
+                    <h2>1970s Scare: A Cooling Earth</h2> In the early 1970s, a different kind of climate worry took
+                    hold: global cooling. As more people became concerned about pollutants people were emitting into the
+                    atmosphere, some scientists theorized the pollution could block sunlight and cool Earth.<br><br>
+                    In fact, Earth did cool somewhat between 1940-1970 due to a postwar boom in aerosol pollutants which
+                    reflected sunlight away from the planet.<br><br>The idea that sunlight-blocking pollutants could
+                    chill Earth caught on in the media, as in a 1974
+                    Time magazine article titled “Another Ice Age?”<br><br>
+                    But as the brief cooling period ended and temperatures resumed their upward climb, warnings by a
+                    minority of scientists that Earth was cooling were dropped.<br><br>Part of the reasoning was that
+                    while smog could remain suspended in the air for
+                    weeks, CO2 could persist in the atmosphere for centuries.
+                </li>
+                <li>
+                    <h2>1988: Global Warming Gets Real</h2> The early 1980s would mark a sharp increase in global
+                    temperatures. Many experts point to 1988 as a critical turning
+                    point when watershed events placed global warming in the spotlight.<br><br>The summer of 1988 was
+                    the hottest on record (although many since then have been hotter). 1988 also saw widespread
+                    drought and wildfires within the United States.<br><br>Scientists sounding the alarm about climate
+                    change began to see media and the public paying closer attention. NASA
+                    scientist James Hansen delivered testimony and presented models to congress in June of 1988, saying
+                    he was “99 percent
+                    sure” that global warming was upon us.<br>
+                </li>
+                <li>
+                    <h2>1989: IPCC</h2>One year later, in 1989, the Intergovernmental Panel on Climate Change (IPCC) was
+                    established under the United Nations
+                    to provide a scientific view of climate change and its political and economic impacts.
+                    </br><br>
+                    As global warming gained currency as a real phenomenon, researchers dug into possible ramifications
+                    of a warming
+                    climate. Among the predictions were warnings of severe heat waves, droughts and more powerful
+                    hurricanes fueled by
+                    rising sea surface temperatures.
+                    <br><br>
+                    Other studies predicted that as massive glaciers at the poles melt, sea levels could rise between 11
+                    and 38 inches (28
+                    to 98 centimeters) by 2100, enough to swamp many of the cities along the east coast of the United
+                    States.
+                </li>
+                <li>
+                    <h2>1997: Kyoto Protocol: United States In, Then Out</h2>Government leaders began discussions to try
+                    and stem the outflow of greenhouse gas emissions to prevent the most dire
+                    predicted outcomes. The first global agreement to reduce greenhouse gases, the Kyoto Protocol, was
+                    adopted in 1997.
+                    <br><br>
+                    The protocol, which was signed by President Bill Clinton, called for reducing the emission of six
+                    greenhouse gases in 41
+                    countries plus the European Union to 5.2 percent below 1990 levels during the target period of 2008
+                    to 2012.
+                    <br><br>
+                    In March 2001, shortly after taking office, President George W. Bush announced the United States
+                    would not implement the
+                    Kyoto Protocol, saying the protocol was “fatally flawed in fundamental ways” and citing concerns
+                    that the deal would
+                    hurt the U.S. economy.
+                </li>
+                <li>
+                    <h2>2006: An Inconvenient Truth</h2>
+                    In 1997, the IPCC issued its third report on climate change, saying that global warming,
+                    unprecedented since the end of
+                    the last ice age, is “very likely,” with highly damaging future impacts. Five years later, in 2006,
+                    former Vice
+                    President and presidential candidate Al Gore weighed in on the dangers of global warming with the
+                    debut of his film An
+                    Inconvenient Truth. Gore won the 2007 Nobel Peace Prize for his work on behalf of climate change.
+                    <br><br>Politicization over climate change, however, would continue, with some skeptics arguing that
+                    predictions
+                    presented by the IPCC and publicized in media like Gore’s film were overblown.
+                    <br><br>Among those expressing skepticism over global warming was future U.S. president Donald
+                    Trump. On November 6,
+                    2012, Trump tweeted “The concept of global warming was created by and for the Chinese in order to
+                    make U.S.
+                    manufacturing non-competitive.”
+                </li>
+                <li>
+                    <h2>2015: Paris Climate Agreement: United States In, Then Out</h2>
+                    The United States, under President Barack Obama, would sign onto another milestone treaty on climate
+                    change, the Paris
+                    Climate Agreement, in 2015. In that agreement, 195 countries pledged to set targets for their own
+                    greenhouse gas cuts
+                    and to report their progress.
+                    <br><br>The backbone of the Paris Climate Agreement was a declaration to prevent a global
+                    temperature rise of 2 degrees
+                    C (3.6 degrees F). Many experts considered 2 degrees C of warming to be a critical limit, which, if
+                    surpassed will lead
+                    to increasing risk of more deadly heat waves, droughts, storms and rising global sea levels.
+                    <br><br>The election of Donald Trump in 2016 led to the United States declaring it would withdraw
+                    from the Paris treaty.
+                    President Trump, citing the “onerous restrictions” imposed by the accord, stated that he could not
+                    “in good conscience
+                    support a deal that punishes the United States.”
+                    <br><br>That same year, independent analyses by NASA and the National Oceanic and Atmospheric
+                    Administration (NOAA)
+                    found Earth’s 2016 surface temperatures to be the warmest since modern record keeping began in 1880.
+                    And in October
+                    2018, the U.N.'s Intergovernmental Panel on Climate Change issued a report that concluded "rapid,
+                    far-reaching" actions
+                    are needed to cap global warming at 1.5 Celsius (2.7 Fahrenheit) and avert the most dire,
+                    irreversible consequences for
+                    the planet.
+                </li>
+                <li>
+                    <h2>2018: Greta Thunberg and Climate Strikes</h2>
+                    In August 2018, Swedish teenager and climate activist Greta Thunberg began protesting in front of
+                    Swedish Parliament
+                    with a sign: “School Strike for Climate.” Her protest to raise awareness for global warming caught
+                    the world by storm
+                    and by November 2018, over 17,000 students in 24 countries were participating in climate strikes. By
+                    March 2019,
+                    Thunberg was nominated for a Nobel Peace Prize. She participated in the United Nations Climate
+                    Summit in New York City
+                    in August of 2019, famously taking a boat across the Atlantic instead of flying to reduce her carbon
+                    footprint.
+                    <br><br>The UN Climate Action Summit reinforced d that “1.5℃ is the socially, economically,
+                    politically and
+                    scientifically safe limit to global warming by the end of this century,” and set a deadline for
+                    achieving net zero
+                    emissions to 2050.
+                </li>
+            </ul>
+            <br><br>
+        </div>
+        <br>
+        <a id="tribute-link" href="https://www.climatechangenews.com/" target="_blank">For more information visit
+            Climate Change News</a>
+        <br><br>
+    </div>
+</body>
+<footer>Powered by <span id="powered">Boaz Shlomo-David</span>
+</footer>
+
+</html>
