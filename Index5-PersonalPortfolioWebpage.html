@@ -1,8 +1,17 @@
-<!DOCTYPE HTML>
-<HTML>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
 <!---
 
-Responsive Web Design Projects - Build a Personal Portfolio Webpage
+Responsive Web Design Projects - 
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNBOYG.
 Fulfill the below user stories and get all of the tests to pass. Give it your own personal style. 
 You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
@@ -24,25 +33,87 @@ you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
 Once you're done, submit the URL to your working project with all its tests passing.
 
 --->
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE HTML>
+<html>
 
-<!-- 
-
-Hello Camper!
-
-For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
-
-- The freeCodeCamp Team 
-
--->
-
-<HEAD>
-    <TITLE>Personal Portfolio Webpage</TITLE>
+<head>
+    <title>Personal Portfolio Webpage</title>
     <LINK rel="stylesheet" type="text/css" href="assets/css/css5-PersonalPortfolioWebpage.css">
-</HEAD>
+</head>
 
-<BODY>
-    ... document body...
-</BODY>
+<body>
+    <div id="navbar" class="navbar">
+        <ul class="nav-list">
+            <li>
+                <a href="#welcome-section">About</a>
+            </li>
+            <li>
+                <a href="#projects">Work</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div id="welcome-section">
+            <h1 id="welcome-header">Boaz Shlomo-David</h1>
+            <h2 id="h2-header">I'm experinced web developer</h2>
+            <p>Scroll this page to see the effect</p>
+        </div>
+        <div id="projects">
+            <h1 id="portfolio-header">These are some of my projects</h1>
 
-</HTML>
+            <article class="project-tile">
+                <h2>1. Tribute Page Project - Climate Change</h2>
+                <a href="https://codepen.io/boaz2020/pen/KKVxZBg">
+                    <div class="thumbnail-container">
+                        <div class="thumbnail">
+                            <iframe src="https://codepen.io/boaz2020/pen/KKVxZBg" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <p>Scroll this page to see the effect</p>
+                </a>
+            </article>
+
+            <a href="https://www.globes.co.il/">
+                <div style="position:relative;width: 640px;height: 360px;">
+                    <div>
+
+                    </div>
+                    <div
+                        style="position: absolute;top:0;left:0;width: 200px;height:200px;z-index:2;opacity:0.0;filter: alpha(opacity = 50)">
+                        <iframe src="https://www.ynet.co.il"
+                            style="position:relative;width: 1920px;height: 1080px;"></iframe></div>
+                </div>
+            </a>
+
+            <article class="project-tile">
+                <h2>2. Survey Form Project - Health Assessment</h2>
+                <p>Scroll this page to see the effect</p>
+            </article>
+
+            <article class="project-tile">
+                <h2>3. Product Landing Project - John Deere Agriculture</h2>
+                <p>Scroll this page to see the effect</p>
+            </article>
+
+            <article class="project-tile">
+                <h2>4. Product Landing Project - John Deere Agriculture</h2>
+                <p>Scroll this page to see the effect</p>
+            </article>
+
+            <article class="project-tile">
+                <h2>5. Personal Portfolio Webpage Project - Boaz Shlomo-David</h2>
+                <p>Scroll this page to see the effect</p>
+            </article>
+
+        </div>
+        <div id="contact">
+            <h1 id="contact-header">Contact</h1>
+            <p>Scroll this page to see the effect</p>
+        </div>
+    </div>
+</body>
+
+</html>

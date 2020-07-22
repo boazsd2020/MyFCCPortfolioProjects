@@ -1,0 +1,156 @@
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+body {
+  margin:0;
+  font-family: verdana;
+  background-color: Cornsilk;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: Crimson;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: red;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #00F F;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.main {
+  margin-top: 30px;
+  height: 400px;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+#projects {
+  background-color: SteelBlue;
+}
+#contact {
+  background-color: SlateGrey;
+}
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 1.5rem;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+h2 {
+  color: red;
+  font-style: italic;
+}
+
+#welcome-section {
+  background-color: black;
+}
+
+.button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.pro-img {
+  width: 640px;
+  height:360px;
+}
+
+.thumbnail iframe {
+  width: 1440px;
+  height: 900px;
+}
+
+.thumbnail {
+  position: relative;
+  width: 360px;
+  height: 225px;
+  -ms-zoom: 0.25;
+  -moz-transform: scale(0.25);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.25);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.25);
+  -webkit-transform-origin: 0 0;
+}
+
+.thumbnail:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.thumbnail-container {
+  width: 360px;
+  height: 225px;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+

@@ -1,0 +1,99 @@
+html {
+  font-family: verdana;
+   background-color: AntiqueWhite; 
+}
+
+#img-div {
+  text-align: center;
+  display: block;
+}
+
+#tribute-info {
+  max-width: 700px;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-weight: bold;
+  margin: auto;
+}
+
+ul {
+  color: black;
+  margin: 10px;
+}
+
+li {
+  text-align: left;
+}
+
+.form-element {
+  display: block;
+  width: 97%;
+  height: 32px;
+  font-size: 20px;
+  padding: 0.3rem 0.6rem;
+}
+
+form {
+  margin: auto;
+  border: 5px solid red;
+  max-width: 800px;
+  background-color: #4a3e8e;
+  color: white;
+  font-size: 22px;
+  padding: 30px;
+  border-radius: 0.25rem;
+}
+
+
+#image {
+max-width: 100%;
+display: block;
+height: auto;
+margin: 0 auto;
+height: auto;
+}
+
+h1 {
+background-color: Navy;
+color: white;
+padding: 20px;
+font-size: 40px;
+text-align: center;
+}
+
+#tribute-link {
+padding: 20px;
+margin: 20px;
+}
+
+footer {
+text-align: center;
+color: RoyalBlue;
+background-color: LightGrey;
+padding: 15px;
+font-size: 13px;
+}
+
+#powered {
+font-size: 18px;
+}
+
+#submit{
+  height: 50px;
+  padding: 10px;
+  background-color: gold;
+  width: 100%;
+}
+
+#dropdown-label, #textbox-label, #checkbox-label {
+  color:yellow;
+}
+
+textarea {
+  display: block;
+  width: 97%;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 0.3rem 0.6rem;
+}

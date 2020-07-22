@@ -1,9 +1,19 @@
-<!DOCTYPE HTML>
-<HTML>
-
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<!-- 
+<!DOCTYPE HTML>
+<html>
+
+<!--
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding!
+
+- The freeCodeCamp Team
+
+-->
+
+<!--
 
 Responsive Web Design Projects - Build a Product Landing Page
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/RKRbwL.
@@ -31,27 +41,52 @@ Once you're done, submit the URL to your working project with all its tests pass
 
 Hello Camper!
 
-For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding!
 
-- The freeCodeCamp Team 
-Originak Trombones 
+- The freeCodeCamp Team
+Originak Trombones
 Handcrafted, home-made masterpieces
 submit Get Started
 
 -->
-<HEAD>
-    <TITLE>A study of population dynamics</TITLE>
-    <LINK rel="stylesheet" type="text/css" href="assets/css/css3-ProductLandingPage.css">
-</HEAD>
+
+<!--
+ #Product Landing Page tests
+passes:16 failures:0 duration:0.01
+#Technology Stack
+1. You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
+#Content
+1. My product landing page should have a <header> element with corresponding id="header".
+2. I can see an image within the #header element with a corresponding id="header-img". A company logo would make a good image here.
+3. Within the <header> element I can see a <nav> element with corresponding id="nav-bar".'
+4. I can see at least three clickable elements inside the nav element, each with the class "nav-link".
+5. When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.'
+6. I can watch an embedded product video with id="video".
+7. My landing page has a <form> element with a corresponding id="form".'
+8. Within the form, there is an <input> field with id="email" where I can enter an email address.
+9. The #email input field should have placeholder text to let the user know what the field is for.
+10. The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+11. Within the form, there is a submit <input> with corresponding id="submit".
+12. When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+#Layout
+1. The navbar should always be at the top of the viewport.
+2. My product landing page should have at least one media query.
+3. My product landing page should utilize CSS flexbox at least once.
+-->
+
+<head>
+    <title>A study of population dynamics</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/css3-ProductLandingPage.css">
+</head>
 
 <style>
 </style>
 
-<BODY>
+<body>
     <header id="header">
         <nav id="nav-bar">
-            <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Pepsi_logo_2014.svg" alt="Pepsi"
-                height=50px>
+            <a class="nav-logo" href="https://www.deere.com/en/"><img id="header-img"
+                    src="http://www.renewyourdealership.com/_assets/img/JD_Forestry_logo.png" alt="John Deere"></a>
 
             <a href="#features" class="nav-link">Features</a>
             <a href="#pricing" class="nav-link">Pricing</a>
@@ -59,24 +94,130 @@ submit Get Started
         </nav>
     </header>
     <main>
-        <p id="features">Features<br>
-            <video id="video" controls>
-                <source src="https://youtu.be/vr_X2xlilBk" type="video/mp4">
-            </video>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p id="features">
+        <h1>Features</h1>
+        <h2>Agricultural Product Highlights</h2>
+        <h3>We All Run Together</h3>
+        <div class="product-div">Right now, it feels like the world is standing still. But if you look to the land, it’s
+            a different story. Discover the stories of six Deere owners who are still giving their all to the soil
+            because the land never stops.</div>
+        <button type="button" class="button2"><a href="https://www.deere.com/en/lawn-garden/run-together/"
+                class="body-link">Explore More</a></button>
+
+        <h3>John Deere Connected Support</h3>
+        <div class="product-div">For years, our dealers have used connected tools to remotely monitor and proactively
+            service machines to keep you running.</div>
+        <button type="button" class="button2"><a
+                href="https://www.deere.com/en/parts-and-service/connected-support/agriculture-connected-support/"
+                class="body-link">Explore More</a></button>
+
+        <h3>FARM EQUIPMENT & TECHNOLOGY</h3>
+        <div>
+            <ul class="">
+                <li>Cutters & Shredders</li>
+                <li>Harvesting Equipment</li>
+                <li>Hay & Forage Equipment</li>
+                <li>Performance Upgrade Kits</li>
+                <li>Planting Equipment</li>
+                <li>Precision Ag Technology</li>
+                <li>Seeding Equipment</li>
+                <li>Sprayers & Applicators</li>
+                <li>Tillage Equipment</li>
+            </ul>
+
+        </div>
+        <button type="button" class="button2"><a href="" class="body-link">Explore More</a></button>
+
+        <h3>TOOLS AND USED EQUIPMENT</h3>
+        <div>
+            <ul class="">
+                <li>Loaders</li>
+                <li>Home & Workshop Products</li>
+                <li>New Products & Solutions</li>
+                <li>Used Equipment</li>
+            </ul>
+        </div>
+        <button type="button" class="button2"><a href="" class="body-link">Explore More</a></button>
+
+        <h3>TRACTORS AND LOADERS</h3>
+        <div>
+            <ul class="">
+                <li>4WD and Track Tractors (370-620 Engine HP)</li>
+                <li>Compact Tractors (22.4 - 66 Engine HP)</li>
+                <li>Row Crop Tractors (145-410 Engine HP)</li>
+                <li>Specialty Tractors (75-155 Engine HP)</li>
+                <li>Utility Tractors (45-250 Engine HP)</li>
+                <li>Utility Tractor Attachments & Implements</li>
+                <li>Front End Loaders</li>
+                <li>Scraper Systems</li>
+            </ul>
+
+        </div>
+        <button type="button" class="button2"><a href="" class="body-link">Explore More</a></button>
+
+        <h3>UTILITY VEHICLES</h3>
+        <div>
+            <ul class="">
+                <li>Gator™ UV Attachments</li>
+                <li>Gator™ Utility Vehicles</li>
+            </ul>
+        </div>
+        <button type="button" class="button2"><a href="" class="body-link">Explore More</a></button>
+
+        <h3>John Deere Tractor and Farm Equipment Tour</h3>
+        <div>
+            <iframe id="video" height="360" width="640" src="https://www.youtube.com/embed/KoUCBMpZaNI" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
         </p>
-        <p id="pricing">Pricing
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <p id="pricing">
+        <h1>Pricing</h1>
+        <h2>Credit Application</h2>
+        <h3>Equipment Financing</h3>
+        <div class="product-div">John Deere Financial is committed to being your trusted financial resource. We offer a
+            wide array of products and services to meet your needs, with multiple finance solutions easily arranged
+            through the dealer when you make a purchase.</div>
+        <button type="button" class="button2"><a href="https://www.deere.com/en/finance/financing/application/"
+                class="body-link">Explore More</a></button>
+
+        <h3>Parts, Service & Agricultural Inputs</h3>
+        <div class="product-div">Apply online for a John Deere Financial Multi-Use Account.</div>
+        <button type="button" class="button2"><a href="https://www.deere.com/en/finance/financing/application/"
+                class="body-link">Explore More</a></button>
         </p>
-        <p id="contact">Contact
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <label for="email">Enter your email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email">
-            <input id="submit" type="submit" value="Submit">
-        </form>
+
+        <p id="contact">
+        <h1>Contact Us</h1>
+        <h2>Your gateway to better business decisions!</h2>
+        <h3>My John Deere</h3>
+        <div class="product-div">MyJohnDeere makes it simple to access secure John Deere web applications:
+
+            Manage your John Deere Financial accounts, including online payments.
+            Collect and analyze machine and agronomic information.</div>
+        <button type="button" class="button2 contact-btn"><a
+                href="https://www.deere.com/en/finance/financing/application/" class="body-link">CREATE
+                ACCOUNT</a></button>
+
+        <button type="button" class="button2 contact-btn"><a
+                href="https://www.deere.com/en/finance/financing/application/" class="body-link">LEARN OPERATIONS CENTER
+                TEXT</a></button>
+        <div class="form-div">
+            <h3>Demo a John Deere</h3>
+            <p>No matter the job, we have a machine that's right for you.</p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email" id="email-label" class="form-element">Enter your email:</label>
+                <input type="email" id="email" class="contact-btn form-element" name="email"
+                    placeholder="Enter your email">
+
+                <input id="submit" type="submit" value="Submit" class="contact-btn button2">
+            </form>
+        </div>
         </p>
     </main>
-</BODY>
+</body>
+<footer>Powered by <span id="powered">Boaz Shlomo-David</span>
+</footer>
 
-</HTML>
+</html>

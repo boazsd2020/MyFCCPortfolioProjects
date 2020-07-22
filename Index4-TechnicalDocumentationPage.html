@@ -1,5 +1,14 @@
-<!DOCTYPE HTML>
-<HTML>
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 <!---
 
 Responsive Web Design Projects - Build a Technical Documentation Page
@@ -27,25 +36,330 @@ You can build your project by forking this CodePen pen. Or you can use this CDN 
 Once you're done, submit the URL to your working project with all its tests passing.
 
 --->
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<!-- 
-
-Hello Camper!
-
-For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
-
-- The freeCodeCamp Team 
-
+<!---
+ Technical Documentation Page tests
+passes:16 failures:0 duration:0.02
+#Technology Stack
+1. You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
+#Content
+1. I can see a <main> element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
+2. Within the #main-doc ( <main> ) element, I can see several <section> elements, each with a class of "main-section". There should be a minimum of 5.
+3. The first element within each .main-section should be a <header> element which contains text that describes the topic of that section.
+4. Each <section> element with the class of "main-section" should also have an id comprised of the <header> innerText contained within it, with underscores in place of spaces. The id may include special characters if there are special characters in the respective <header> innerText. (e.g. The <section> that contains the header, "JavaScript & Java", should have a corresponding id="JavaScript_&_Java").
+5. The .main-section elements should contain at least 10 <p> elements total (not each).
+6. The .main-section elements should contain at least 5 <code> elements total (not each).
+7. The .main-section elements should contain at least 5 <li> items total (not each).
+8. I can see a <nav> element with a corresponding id="navbar".
+9. The navbar element should contain one <header> element which contains text that describes the topic of the technical documentation.
+10. Additionally, the navbar should contain link (<a>) elements with the class of "nav-link". There should be one for every element with the class "main-section".
+11. The <header> element in the navbar must come before any link (<a>) elements in the navbar.
+12. Each element with the class of "nav-link" should contain text that corresponds to the <header> text within each <section> (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
+13. When I click on a navbar element, the page should navigate to the corresponding section of the "main-doc" element (e.g. If I click on a "nav-link" element that contains the text "Hello world", the page navigates to a <section> element that has that id and contains the corresponding <header>.
+#Layout
+1. On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left half of the screen. It should always be visible to the user and should remain stationary. You may need to enlarge the viewport or zoom out to ensure the navbar doesn't scroll with the page content.
+2. My Technical Documentation page should use at least one media query.
 -->
-<HEAD>
-    <TITLE>Technical Documentation Page</TITLE>
-    <LINK rel="stylesheet" type="text/css" href="assets/css/css4-TechnicalDocumentationPage.css">
-</HEAD>
+<!DOCTYPE html>
+<html>
 
-<BODY>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-</BODY>
+<body>
 
-</HTML>
+    <div id="sidebar" class="sidebar">
+        <nav id="navbar">
+            <header id="header"><img id="header-img" .
+                    src="https://seeklogo.com/images/C/coast-guard-logo-D6888ED723-seeklogo.com.png"
+                    alt="US Coast Guard">
+                <h3>BOAT CREW HANDBOOK</h3>
+                <h3>Navigation and Piloting</h3>
+            </header>
 
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Aids_to_Navigation">Aids to Navigation</a></li>
+                <li><a class="nav-link" href="#U.S_AtoN_System_Variations">U.S AtoN System Variations</a></li>
+                <li><a class="nav-link" href="#Electronic_&_Virtual_Aids">Electronic & Virtual Aids</a></li>
+                <li><a class="nav-link" href="#The_Light_List">The Light List</a></li>
+                <li><a class="nav-link" href="#Navigation">Navigation</a></li>
+                <li><a class="nav-link" href="#The_Earth_and_Its_Coordinates">The Earth and Its Coordinates</a></li>
+                <li><a class="nav-link" href="#Nautical_Charts">Nautical Charts</a></li>
+                <li><a class="nav-link" href="#Integrated_Electronic_Navigation_Systems">Integrated Electronic
+                        Navigation Systems</a></li>
+
+            </ul>
+        </nav>
+
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Boat Crew Handbook - Navigation and Piloting </button>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>
+                    <h3>About</h3>
+                    <p>The purpose of this handbook is to provide the safest, most efficient methods, techniques, and
+                        informational guidance possible to navigate boats in maritime environments and situations. Major
+                        topics within this handbook are aids to navigation (ATON) and navigation.</p>
+                    <h3>Procedures</h3>
+                    <p>This Handbook is not intended to cover every contingency that may be
+                        encountered during mission execution or training. Successful operations
+                        require the exercise of good safety practices, sound judgment and
+                        common sense at all levels of command.</p>
+                    <h3>How to Use this Handbook</h3>
+                    <p>Each Chapter of this Handbook includes its own table of contents and is divided into sections. A
+                        glossary and list of acronyms are located at the end of this Handbook.</p>
+                    <h3>Chapter Layout</h3>
+                    <p>The first page of each Chapter includes an Introduction, and an In this
+                        Section (which lists each section title).
+                        The first page of each chapter includes an Introduction, an In this Chapter,
+                        and References for this Chapter, as applicable.
+                        The first page of each section includes an Introduction, an In this Section,
+                        and References for this Section, as applicable.
+                        In the left column of each page is the block title, which provides a
+                        descriptive word or phrase for the corresponding block of text across from it.</p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Aids_to_Navigation">
+                <header>Aids to Navigation</header>
+                <h3>Introduction</h3>
+                <article>
+                    <p>This chapter introduces the aids to navigation (AtoN) used in the United States. AtoN are devices
+                        or marks, both physical and virtual, that assist mariners in determining their vessel’s
+                        position, or course, or to warn of dangers, obstructions, or regulatory requirements affecting
+                        safe navigation.</p>
+                    <p>In the U.S., the Coast Guard is responsible for servicing and maintaining AtoN under federal
+                        jurisdiction. This includes both short and long-range navigation systems found in the navigable
+                        waters, along the U.S. coast, Intracoastal Waterway (ICW) system, and the Western Rivers system.
+                    </p>
+                    <p>Lakes and inland waterways that fall under state jurisdiction use the Uniform State Waterway
+                        Marking System (USWMS).</p>
+                </article>
+                <article>
+                    <h3>U.S. Aids to Navigation System</h3>
+                    <p>Buoys, beacons, and other short-range AtoN are used the same way signs, lane separations, and
+                        traffic lights guide motor vehicle drivers. Together, these AtoN make up the short-range AtoN
+                        system, which uses charted reference marks to provide information for safely navigating
+                        waterways. In the U.S., short-range aids conform to the International Association of Marine
+                        Aids to Navigation and Lighthouse Authorities (IALA) Region B. This is called System B, the U.S.
+                        Lateral System, or the U.S. Aids to Navigation System. The Coast Guard maintains short-range
+                        aids to provide:
+                    <ol>
+                        <li>(01) Daytime visual system of daymarks, beacons and buoys.</li>
+                        <li>(02) Nighttime visual system of lights and retroreflective signals.</li>
+                        <li>(03) Radar system of radar reflectors and RACONs (radar beacons).</li>
+                        <li>(04) A sound system of various non-directional sound producing devices, though not required
+                            by IALA.</li>
+                        <li>(05) Transmision of Automated Identification System (AIS) AtoN messages and marine safety
+                            information.</li>
+                    </ol>
+                    </p>
+                </article>
+                <h3>Lateral and Cardinal Significance</h3>
+                <article>
+                    <p>Prior to the mid-1970’s, there were over 30 different navigation systems in use around the world.
+                        To reduce confusion, IALA established two systems of buoyage for conveying navigation
+                        information to mariners. The IALA System A and B were established, with the U.S. complying with
+                        the IALA B
+                        System.</p>
+                    <p>The IALA-A and IALA-B systems use the Lateral and Cardinal Systems to define the conventions of
+                        buoyage, and to mark channels with AtoN. “Lateral significance” or “cardinal significance” means
+                        that the rules for the Lateral or Cardinal System apply in that instance. However, if something
+                        has no lateral or cardinal significance, the respective system’s rules do not apply to the
+                        situation. The differences between the markings and conventions used in the Lateral and Cardinal
+                        Systems are discussed in the following paragraphs. Table 2-1briefly describes the IALA Systems A
+                        and B:</p>
+                </article>
+                <h3>Lateral System</h3>
+                <article>
+                    <p>In the lateral system, but route relative to a conventional direction of buoyage (usually
+                        upstream). They also mark junctions, a point where two channels meet when proceeding seaward; or
+                        bifurcations, the point where a channel divides when proceeding from seaward, or the place where
+                        two tributaries meet.</p>
+                    <p>In U.S. waters, AtoN use the IALA-B system of lateral marks with few exceptions, arranged in
+                        geographic order known as the “conventional direction of buoyage”. Under this, the memory aid 3R
+                        rule of “red, right, returning” applies when a vessel is returning from
+                        seaward. This means, when returning from sea, keep red markers to the right of the vessel from:
+                    <ul>
+                        <li>(01) North to south along the Atlantic Coast.</li>
+                        <li>(02) South to north and east to west along the Gulf Coast.</li>
+                        <li>(03) South to north and east to west along the Pacific Coast.</li>
+                        <li>(04) East to west in theGreat Lakes except for Lake Michigan which is north to south.</li>
+                    </ul>
+                    </p>
+                    <iframe id="video" width="650" height="400" src="https://www.youtube.com/embed/RIen2AOKsa0"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </article>
+            </section>
+
+            <section class="main-section" id="U.S_AtoN_System_Variations">
+                <header>U.S AtoN System Variations</header>
+                <article>
+                    <p>The Uniform State Waterway Marking System (USWMS) is designed for use by many types of operators
+                        and small vessels on lakes and inland waterways not shown on nautical charts. The conventional
+                        direction of buoyage in the USWMS is considered upstream or towards the head of navigation. This
+                        system has two categories of aids:</p>
+                    <ul>
+                        <li>(01) System of AtoN compatible with and supplements the U.S. lateral system in states’
+                            waters, not federal jurisdiction.</li>
+                        <li>(02) System of regulatory markers that warn of danger or provide general information and
+                            directions.</li>
+                    </ul>
+                    <h3>Variations</h3>
+                    <p>There are three variations to the U.S. AtoN System:</p>
+                    <ul>
+                        <li>(01) On a well-defined channel, solid-colored red and black buoys are established in pairs
+                            (gate buoys), marking each side of the navigablechannel.</li>
+                        <li>(02) The color black is used instead of green.</li>
+                        <li>(03) The shape of the buoy has no significance.</li>
+                    </ul>
+                    <h3>Cardinal Marks</h3>
+                    <p>When there is no well-defined channel or when there is an obstruction whose nature and location
+                        allows it to be approached by a vessel from more than one direction, AtoN with cardinal marks
+                        may be used. The USWMS provides for three aids with marks that have cardinal significance:</p>
+                    <ul>
+                        <li>(01) A white buoy with a red top represents an obstruction and the buoy should be passed on
+                            the south or west.</li>
+                        <li>(02) A white buoy with a black top represents an obstruction and the buoy should be passed
+                            to the north or east.</li>
+                        <li>(03) A red and white vertically striped buoy indicates an obstruction exists between that
+                            buoy and the nearest shore.</li>
+                    </ul>
+                    <p></p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Electronic_&_Virtual_Aids">
+                <header>Electronic & Virtual Aids</header>
+                <article>
+                    <p>The Uniform State Waterway Marking System (USWMS) is designed for use by many types of operators
+                        and small vessels on lakes and inland waterways not shown on nautical charts. The conventional
+                        direction of buoyage in the USWMS is considered upstream or towards the head of navigation. This
+                        system has two categories of aids:</p>
+                    <code>
+            code {
+            display: block;
+            margin: 10px;
+            border-radius: 5px;
+            border-color: yellow;
+            }
+          </code>
+                </article>
+            </section>
+
+            <section class="main-section" id="The_Light_List">
+                <header>The Light List</header>
+                <article>
+                    <p>The Uniform State Waterway Marking System (USWMS) is designed for use by many types of operators
+                        and small vessels on lakes and inland waterways not shown on nautical charts. This system has
+                        two categories of aids:</p>
+                    <code>
+            code {
+            display: block;
+            border-color: yellow;
+            }
+          </code>
+                </article>
+            </section>
+
+            <section class="main-section" id="Navigation">
+                <header>Navigation</header>
+                <article>
+                    <code>
+            code {
+            display: block;
+            text-align: left;
+            white-space: pre;
+            position: relative;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 2;
+            background-color: #f7f7f7;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            border-color: yellow;
+            }
+          </code>
+                    <p></p>
+                </article>
+            </section>
+
+            <section class="main-section" id="The_Earth_and_Its_Coordinates">
+                <header>The Earth and Its Coordinates</header>
+                <article>
+                    <p></p>
+                    <code>
+            code {
+            display: block;
+            text-align: left;
+            white-space: pre;
+            position: relative;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 2;
+            background-color: #f7f7f7;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            border-color: yellow;
+            }
+          </code>
+                </article>
+            </section>
+
+            <section class="main-section" id="Nautical_Charts">
+                <header>Nautical Charts</header>
+                <article>
+                    <code>
+            code {
+            display: block;
+            text-align: left;
+            white-space: pre;
+            position: relative;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 2;
+            background-color: #f7f7f7;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            border-color: yellow;
+            }
+          </code>
+                </article>
+            </section>
+
+            <section class="main-section" id="Integrated_Electronic_Navigation_Systems">
+                <header>Integrated Electronic Navigation Systems</header>
+                <article>
+
+                </article>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("sidebar").style.width = "350px";
+            document.getElementById("main").style.marginLeft = "350px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+</body>
+
+</html>
