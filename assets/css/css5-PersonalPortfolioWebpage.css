@@ -186,9 +186,14 @@ project-link {
 
 .column {
   float: left;
-  width: 31%;
+  max-width: 31%;
   padding: 10px;
   height: 300px;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row:after {
@@ -196,4 +201,3 @@ project-link {
   display: table;
   clear: both;
 }
-
