@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   html {
@@ -5,10 +11,25 @@
   }
 }
 
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
 body {
+  display: flexbox;
   margin:0;
   font-family: verdana;
   background-color: Cornsilk;
+  width: 100%;
 }
 
 .navbar {
@@ -33,20 +54,10 @@ body {
   z-index: 10;
 }
 
-#welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #00F F;
-}
-
 ul {
   list-style-type: none;
-  margin: 10px;
-  padding: 10px;
+  padding: 0rem;
+  margin: 0rem;
   overflow: hidden;
 }
 
@@ -71,10 +82,6 @@ li a:hover {
   margin-right: 2rem;
 }
 
-#projects {
-  background-color: SteelBlue;
-}
-
 #contact {
   background-color: SlateGrey;
 }
@@ -82,7 +89,6 @@ li a:hover {
 .nav-list a {
   display: block;
   font-size: 2.2rem;
-  padding: 1.5rem;
 }
 
 h1 {
@@ -91,14 +97,55 @@ h1 {
   font-style: italic;
 }
 
-h2 {
-  color: red;
-  font-style: italic;
+
+/* Welcome section */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  padding: 0rem;
 }
 
-#welcome-section {
-  background-color: black;
+/* Projects section */
+#projects-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  background-color: gray;
 }
+
+
+/*
+ 
+*/
+
+/* Contact section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0rem;
+  background: var(--main-gray);
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+
 
 #thumbnails {
   text-align: center;
@@ -106,8 +153,8 @@ h2 {
 }
 
 .thumbnail-container {
-  width: 360px;
-  height: 225px;
+  max-width: 480px;
+  max-height: 300px;
   display: inline-block;
   overflow: hidden;
   position: relative;
@@ -117,8 +164,6 @@ h2 {
 
 .thumbnail-container::before {
   position: absolute;
-  left: "calc(50% - 16px)";
-  top: "calc(50% - 18px)";
   opacity: 0.2;
   display: block;
   -ms-zoom: 2;
@@ -139,8 +184,8 @@ h2 {
 }
 
 .thumbnail, .thumbnail iframe {
-  width: 1440px;
-  height: 900px;
+  width: 1920px;
+  height: 1200px;
 }
 
 .thumbnail iframe {
@@ -176,7 +221,6 @@ project-link {
   font-weight: bold;
   line-height: 2em;  
   list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='-1 -1 2 2'><circle r='0.5' /></svg>");
-
 }
 
 .welcome-list {
@@ -201,3 +245,81 @@ project-link {
   display: table;
   clear: both;
 }
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  background-color: #3a3942;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+.project-title {
+  padding: 0.5rem 0.5rem;
+  margin: auto;
+  line-height: 2rem;
+  width: 85%;
+  max-width: 480px;
+  font-size: 0.7em;
+  font-weight: bold;
+  color: red;
+  font-style: italic;
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+#profile-link {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#image {
+    max-width: 300px;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    height: auto;
+}
+
